@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+'Diagrama Elaborado por el Equipo desarrollador RapidoCash conformado por: Best Camila, Antias Manuel y Agudelo Daniel'
+'Creación de la clase Usuario: '
+
+class Usuario{
+  -pin:int
+  +cambiarPin():String
+}
+
+'Creación de la clase Cliente'
+
+class Cliente{
+  -nombreCliente:String
+  -numeroTeléfonoCliente:String
+  -emailCliente:String
+  -idCliente:int
+  -cuenta:Cuenta
+}
+
+'Creación de la clase Administrador:'
+
+class Administrador{
+  -nombreAdministrador:String
+  -emailAdministrador:String
+  -ciAdministrador:String
+  -userAdministrador:String
+  -estadoCuentaAdministrador: Boolean
+}
+
+'Creación de la clase Operaciones'
+
+class Operaciones{
+  -cliente:Cliente
+  -transacciones:Transacciones
+}
+
+'Creación de la clase Cuenta:'
+
+class Cuenta{
+  -numeroCuentaCliente:int
+  -tipoCuentaCliente:String
+  -estadoCuentaCliente:Boolean
+  -SaldoCliente:Double
+}
+
+'Creación de la clase Transacciones:'
+
+class Transacciones{
+  -fecha:LocalDate
+  -tipoTransaccionCliente:String
+  -monto:Double
+  -cliente:Cliente
+}
+
+'Creación de las relaciones entre las clases: '
+
+Cliente <|-- Usuario
+Administrador<|-up- Usuario
+Administrador  "1..*" --Operaciones
+Cliente*--Cuenta
+Cliente  "1..*" -right--Transacciones
+
+
+@enduml

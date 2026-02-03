@@ -1,0 +1,33 @@
+   Reciba un cordial saludo de parte del Development team del sistema de cajero Automático RapidoCash (ATM). La presente
+de este File.Txt es dar una pequeña presentación más formal sobre nuestro proyecto, así mismo también el agradecer a
+nuestro cliente, el profesor Danny Dos Santos por permitirnos a Agudelo Daniel, Antias Manuel y Best Camila estudiantes
+de la Universidad Católica Andrés Bello, formar este equipo desarrollador para resolver el reto planteado para nuestro
+proyecto final de semestre de la materia "Programación Orientada a Objetos" de la carrera de Ingeniería Informática.
+
+    En este proyecto asumimos el reto de crear una aplicación de simulación bancaria combinada con una aplicación de
+gestión de cuentas bancarias. Nuestro programa cuenta con dos modos de presentación, el modo "Cliente o Usuario" y el
+modo "Administrador". El cliente en nuestro sistema bancario podrá cambiar su pin, retirar efectivo de manera rápida
+con montos predeterminados, o ingresar la cantidad que desea retirar, siendo 1000bs la cantidad máxima de efectivo a
+retirar; así mismo nuestros estimados clientes pueden hacer depósitos a su cuenta y consultar su saldo actual para tener
+un control total sobre su cuenta bancaria. Además asumimos el reto de poder mostrar todas las transacciones bancarias
+que el usuario ha realizado en la aplicación. Somos un sistema bancario nacional, por lo que la denominación monetaria
+que trabajamos son los Bolívares Fuertes o Bolívares Soberanos (Bs).
+
+    Por el apartado de Administrador, los cuales se encargan de llevar un registro monitoreado de las cuentas y los
+procesos llevados a cabo dentro de la aplicación, tenemos las siguientes funcionalidades. Crear nuevos usuarios; eliminar
+usuarios; modificar información de los usuarios de ser requerida y ver todo el historial de movimientos de los clientes
+y de lod mismos administradores para llevar un correcto control de actividades. A sí mismo también para evitar que
+por alguna equivocación bloqueen sus cuentas y tengan que recuperarla con algún superior se implementó una funcionalidad
+para que puedan cambiar su contraseña antes de bloquearla, y tras ingresar su correo, se les enviará un correo con un
+tokken de verificación para hacer efectiva esta modificación.
+
+    Nuestro proyecto consta con una Documentación extensa, que puede revisar viendo en la carpeta Documentos, y en la
+carpeta JavaDoc(ingresando en el archivo index.html).
+
+    Nuevamente, el Development Team RapidoCash, se encuentra muy complacido por la oportunidad y no dejarán de soñar
+con la entrega de un proyecto que pueda satisfacer y estar a la altura de las expectativas de nuestro estimado cliente.
+
+    Gracias por confiar en el Sistema Automático de Cajero RapidoCash y recuerde que, ¡Su dinero crece con nosotros!.
+
+    "Si puedes imaginar, lo puedes programar"
+      -Alejandro Taboada (Programación ATS).-

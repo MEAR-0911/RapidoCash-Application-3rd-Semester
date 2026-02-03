@@ -1,0 +1,50 @@
+@startuml
+
+'Diagrama Elaborado por el Equipo desarrollador de la UCAB, RapidoCash, conformado por: Antias Manuel,Agudelo Daniel y Best Camila'
+
+'Creación de los actores: '
+
+"Usuario" as user#Darkgoldenrod/gold;line:Darkgoldenrod/gold;line.bold;text:black
+"Administrador" as admi#blue/cyan;line:blue/cyan;line.bold;text:blue
+left to right direction
+
+'Creación de todas las funciones:'
+
+rectangle RapidoCash_ATM(Antias,Agudelo,Best) {
+(Login)#Darkgoldenrod/gold;line:gold;line.dashed;text:black
+(Verificación)#Darkgoldenrod/gold;line:gold;line.dashed;text:black
+(Deposito)#Darkgoldenrod/gold;line:gold;line.dashed;text:black
+(Retiro)#Darkgoldenrod/gold;line:gold;line.dashed;text:black
+(Consulta de Monto)#Darkgoldenrod/gold;line:gold;line.dashed;text:black
+(Consulta Últimos Movimientos)#Darkgoldenrod/gold;line:gold;line.dashed;text:black
+(LoginAdmi)#cyan/blue;line:aqua;line.dashed;text:black
+(VerificaciónAdmi)#cyan/blue;line:aqua;line.dashed;text:black
+(Añadir Usuario)#cyan/blue;line:aqua;line.dashed;text:black
+(Eliminar Usuario)#cyan/blue;line:aqua;line.dashed;text:black
+(Imprimir Usuario)#cyan/blue;line:aqua;line.dashed;text:black
+(Actualizar Usuario)#cyan/blue;line:aqua;line.dashed;text:black
+(Recuperar contraseña)#gold/blue;line:pink;line.dashed;text:black
+}
+
+'Definiendo las relaciones que hay entre las funciones de Usuario:'
+
+user -down-(Login)#line:Darkgoldenrod/gold;line.bold;
+(Login).>(Verificación)#line:darkorange;line.dashed;text:black :<Include>
+user-(Deposito)#line:Darkgoldenrod/gold;line.bold;
+user-(Retiro)#line:Darkgoldenrod/gold;line.bold;
+user-(Consulta de Monto)#line:Darkgoldenrod/gold;line.bold;
+user-(Consulta Últimos Movimientos)#line:Darkgoldenrod/gold;line.bold;
+user--(Recuperar contraseña)#line:Darkgoldenrod/gold;line.bold;
+
+'Definiendo las relaciones que hay entre las funciones de Administrador:'
+
+(LoginAdmi)---admi#line:blue;line.bold;
+(VerificaciónAdmi)<.up.(LoginAdmi)#line:darkorange;line.dashed;text:black :<Include>
+(Añadir Usuario)---admi#line:blue;line.bold;
+(Eliminar Usuario)-admi#line:blue;line.bold;
+(Actualizar Usuario)-admi#line:blue;line.bold;
+(Imprimir Usuario)-admi#line:blue;line.bold;
+(Recuperar contraseña)--admi#line:blue;line.bold;
+
+
+@enduml

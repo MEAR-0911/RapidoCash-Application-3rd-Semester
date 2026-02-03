@@ -1,0 +1,73 @@
+                      Descripción del diagrama de casos de uso del sistema ATM RapidoCash
+                      *********** *** ******** ** ***** ** *** *** ******* *** **********
+
+  La presente de este documento es explicar de manera muy general algunas de las características de las funciones
+expresadas en el diagrama de casos de uso presentado con anterioridad.
+
+      USUARIO:
+
+      * Login: El usuario ingresa su número de teléfono y pin para poder ingresar al programa
+               y poder realizar sus operaciones. Al ser la primera función que dispara el usuario,
+               no posee precondiciones.
+
+      * Verificación: Esta es una función obligatoria en la que se verifica si el pin ingresado coincide con el
+                      registrado en nuestra base de datos. Se debió haber realizado anteriormente la precondición
+                      de haberse loggueado en el sistema. A su vez otra precondición que se debe cumplir, es que el
+                      usuario no debe tener su cuenta bloqueada.
+
+      * Retiro: Es una función en la que el usuario interactúa directamente para poder retirar efectivo de su cuenta.
+                El usuario debió haber cumplido con la precondición de haberse loggeado y verificado con éxito. A su
+                vez otra precondición que se debe cumplir, es que el usuario debe tener saldo en su cuenta para poder
+                retirar.
+
+      * Depositar: Es una función en la que el usuario interactúa directamente para poder depositar efectivo a
+                   su cuenta. El usuario debió haber cumplido con la precondición de haberse loggeado y verificado
+                   con éxito. A su vez otra precondición que se debe cumplir es que el usuario debe depositar un
+                   monto aceptado por el sistema.
+
+      * Consultar Monto: Es una función en la que el usuario interactúa directamente para poder conocer el saldo
+                         disponible en su cuenta. El usuario debió haber cumplido con la precondición de haberse
+                         loggeado y verificado con éxito.
+
+      * Consultar últimos movimientos: En una función en la que el usuario interactúa directamente para poder
+                                       observar una lista de todas sus transacciones realizadas. El usuario debió
+                                       haber cumplido con la precondición de haberse loggeado y verificado con
+                                       éxito. A su vez, otra precondición es que el usuario haya hecho alguna
+                                       transacción.
+
+      * Recuperar Contraseña: En esta función el usuario va a recibir por correo electrónico, una clave que
+                              servirá como alternativa para poder realizar el nuevo cambio de contraseña. La
+                              precondición de dicha función será que, el usuario haya bloqueado su cuenta, u
+                              olvidado su contraseña.
+
+************************************************************************************************************************
+
+      ADMINISTRADOR:
+
+      * Login Admi: El administrador ingresa su cédula de identidad y pin para poder ingresar al programa
+                    y poder realizar sus operaciones. Al ser la primera función que dispara el administrador, no
+                    posee precondiciones.
+
+      * Verificación Admi: Esta es una función obligatoria en la que se verifica si el pin y C.I ingresados coinciden
+                           con los registrados en nuestra base de datos. Se debió haber realizado anteriormente la
+                           precondición de haberse loggueado en el sistema. A su vez otra precondición que se debe
+                           cumplir, es que el administrador no debe tener su cuenta bloqueada.
+
+      * Añadir Usuario: En esta función el administrador tiene la potestad de añadir a un usuario al sistema del banco.
+                        Como precondición, se debe haber ingresado exitósamente al programa debido al loggeo. A su vez
+                        se debe verificar que el usuario que se está añadiendo NO está registrado en la base de datos.
+
+      * Eliminar Usuario: En esta función el administrador tiene la potestad de eliminar a un usuario del sistema del
+                          banco.Como precondición, se debe haber ingresado exitósamente al programa debido al loggeo.
+                          A su vez se debe verificar que el usuario que se está eliminando SÍ está registrado en la
+                          base de datos.
+
+      * Actualizar Usuario: En esta función el administrador tiene la potestad de actualizar (editar) la informacición
+                            de algún usuario. Como precondición, se debe haber ingresado exitósamente al programa debido
+                            al loggeo. A su vez se debe verificar que el usuario al que se le actualizarán los datos,
+                            SÍ está registrado en la base de datos.
+
+      * Imprimir Usuario: En esta función el administrador tiene la potestad de imprimir toda la información
+                          registrada de un usuario en el banco.  Como precondición, se debe haber ingresado
+                          exitósamente al programa debido al loggeo. A su vez se debe verificar que el usuario
+                          del cual se imprimiran sus datos, SÍ está registrado en la base de datos.
